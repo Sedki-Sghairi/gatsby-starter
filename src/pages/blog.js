@@ -1,7 +1,8 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 const blog = () => {
-	return <div>hello from blog</div>;
+	return <Layout>hello from blog</Layout>;
 };
 
 export default blog;
