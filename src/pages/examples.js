@@ -3,11 +3,11 @@ import Header from '../examples/Header';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 const examples = ({ data }) => {
-	const { site: { info: { author } } } = data;
+	const { site: { siteMetadata: { author } } } = data;
 	return (
 		<div>
 			<Layout>
-				<h1>hello from examples page</h1>
+				<p>hello from examples page</p>
 				<Header />
 			</Layout>
 			<h5>{author}</h5>
@@ -17,7 +17,7 @@ const examples = ({ data }) => {
 export const data = graphql`
 	query MyQuery {
 		site {
-			info: siteMetadata {
+			siteMetadata {
 				author
 				data
 				description
