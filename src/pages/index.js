@@ -4,7 +4,7 @@ import { ExampleButton } from '../components/Button';
 export default function Home() {
 	return (
 		<Layout>
-			<div>hello</div>
+			<p>hello</p>
 			<ExampleButton>click me</ExampleButton>
 		</Layout>
 	);
