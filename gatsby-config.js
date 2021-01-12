@@ -26,8 +26,8 @@ module.exports = {
 		{
 			resolve: `gatsby-source-contentful`,
 			options: {
-				spaceId: `myId`,
-				accessToken: `myToken`
+				spaceId: `mySpace`,
+				accessToken: `-myToken`
 			}
 		}
 	]
