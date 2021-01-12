@@ -12,7 +12,10 @@ exports.createPages = async ({ graphql, actions }) => {
 	result.data.product.nodes.forEach((x) => {
 		createPage({
 			path: `/products/${x.slug}`,
-			component: path.resolve(`src/templates/product-template.js`)
+			component: path.resolve(`src/templates/product-template.js`),
+			context: {
+				slug: x.slug
+			}
 		});
 	});
 };

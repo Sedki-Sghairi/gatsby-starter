@@ -11,6 +11,9 @@ p {
 	line-height: 2;
 	color: 'red';
 }
+button {
+	padding: 0.2rem 1rem;
+}
 .blog-text {
 	color: red;
 	line-height: 0.5;
